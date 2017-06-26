@@ -25,21 +25,21 @@ public class Classroom {
   }
 
 
-public void accomodate(Person student) {
+  public void accomodate(Person student) {
    if(isClassroomFull()) return; // if false, proceed to next lines
    int studentCount = studentCount();
    capacity[studentCount] = student; // adds student to the array, and executes .studentCount method (above)
-}
+ }
 
 
-public boolean isClassroomFull(){
-  return studentCount() == capacity.length; // returns true or false
-}
+ public boolean isClassroomFull() {
+   return studentCount() == capacity.length; // returns true or false
+ }
 
 
 
-public void emptyClassroom(){
-  for(int i = 0; i < capacity.length; i++){
+ public void emptyClassroom() {
+   for(int i = 0; i < capacity.length; i++) {
     capacity[i] = null;
   }
 }
